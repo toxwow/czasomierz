@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext);section.login {
+  font-family: "Open Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#F5F7FB), to(#eceef2));
+  background: linear-gradient(to right, #F5F7FB, #eceef2);
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+section.login .logo {
+  width: 150px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+section.login .login-wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 77px -25px #a0a0a0;
+}
+
+section.login .login-wrapper .welcome-wrapper {
+  background-color: #F7F7FB;
+  border-radius: 5px 5px 0 0;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+section.login .login-wrapper .welcome-wrapper .icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background: #FFFFFF;
+  text-align: center;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+}
+
+section.login .login-wrapper .welcome-wrapper .icon-wrapper i {
+  line-height: 60px;
+  color: #2B209F;
+  font-size: 30px;
+}
+
+section.login .login-wrapper .welcome-wrapper h1 {
+  color: #3D3165;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+section.login .login-wrapper .welcome-wrapper p {
+  margin: 0;
+  font-weight: 300;
+  color: #B7B3CC;
+}
+
+section.login .login-wrapper .form-wrapper {
+  padding: 15px 20px 10px;
+}
+
+section.login .login-wrapper .form-wrapper label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #B3AEC9;
+}
+
+section.login .login-wrapper .form-wrapper input {
+  border: 0;
+  border-bottom: 1px solid #F5F5F5;
+  border-radius: 0;
+  -webkit-transition: border-bottom-color 0.3s ease-in-out;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+section.login .login-wrapper .form-wrapper input::-webkit-input-placeholder {
+  color: #EBEAEF;
+}
+
+section.login .login-wrapper .form-wrapper input::-moz-placeholder {
+  color: #EBEAEF;
+}
+
+section.login .login-wrapper .form-wrapper input:-ms-input-placeholder {
+  color: #EBEAEF;
+}
+
+section.login .login-wrapper .form-wrapper input::-ms-input-placeholder {
+  color: #EBEAEF;
+}
+
+section.login .login-wrapper .form-wrapper input::placeholder {
+  color: #EBEAEF;
+}
+
+section.login .login-wrapper .form-wrapper input:focus {
+  box-shadow: none;
+  border-bottom-color: #2B209F;
+}
+
+section.login .login-wrapper .form-wrapper button {
+  margin: 30px 0 0;
+  background-color: #2B209F;
+  border: 0;
+  padding: 20px 0;
+}
+
+section.login .login-wrapper .form-wrapper button:focus {
+  box-shadow: none;
+}
+
+section.login .login-wrapper .form-wrapper button:active {
+  background-color: #2b209e;
+}
+
+section.login .remeber-password {
+  margin-top: 15px;
+  text-align: center;
+}
+
+section.login .remeber-password a.btn.btn-link {
+  color: #2B209F !important;
+}
+

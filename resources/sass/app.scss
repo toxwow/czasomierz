@@ -1,0 +1,207 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext');
+@import url('~@fullcalendar/core/main.css');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html{
+  height: 100%;
+}
+
+body{
+  background-image: linear-gradient(180deg, #FAFCFD 0%, #ECF2F6 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 100%;
+}
+
+#app main{
+
+  display: flex;
+
+  nav{
+    flex: 0 0 200px;
+    min-height: 100vh;
+
+    .nav-wrapper {
+      position: fixed;
+      height: 100%;
+      background-color: $primary;
+      top: 0; left: 0;
+
+      .title{
+        background-color: #252278;
+        color: #fff;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        width: 200px;
+        text-align: center;
+
+        p{
+          margin: 0;
+          padding: 15px 0;
+        }
+      }
+
+      .user{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: url('../images/icons/user-img.png') no-repeat center;
+        background-size: cover;
+        margin: 30px auto;
+      }
+
+      ul{
+        list-style: none;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+
+        li{
+          border-left: 3px solid transparent;
+          transition: background-color 0.25s ease-in-out;
+
+          a{
+            text-decoration: none;
+            color: #fff;
+            opacity: 0.5;
+            padding: 20px 0px 20px 20px;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            font-weight: 300;
+
+            img.icon{
+              width: 24px;
+              margin-right: 25px;
+            }
+          }
+
+          &.active{
+            background-color: #4A44D7 !important;
+            border-left: 3px solid #fff;
+
+            a{
+              opacity: 1;
+            }
+          }
+
+          &:hover{
+            background-color: #261B9A;
+
+            a{
+              opacity: 1;
+            }
+          }
+        }
+
+        &.logout{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+  .main-content{
+    background-image: linear-gradient(180deg, #FAFCFD 0%, #ECF2F6 100%);
+    flex-grow: 2;
+    padding: 30px;
+    height: 1900px;
+    flex: 2 1;
+  }
+
+  .right-content{
+    //flex: 1 0 400px ;
+    //width: 400px;
+    background-color: white;
+
+    #calendar{
+      padding: 20px;
+
+      .fc-toolbar{
+        text-align: center;
+
+        .fc-center{
+          display: flex;
+          align-items: center;
+
+          h2{
+            color: #515C66;
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+
+          .fc-button-primary{
+            background-color: transparent;
+            border: none;
+            color: $primary
+          }
+        }
+
+      }
+
+      .fc-head-container.fc-widget-header{
+        border: 0 !important;
+
+        th{
+          border: 2px solid #fff  !important;
+
+          span{
+            font-size: 0.8rem;
+            color:  $primary;
+            font-weight: 300;
+            text-align: center;
+          }
+        }
+
+      }
+
+
+      .fc-body{
+
+        .fc-scroller{
+          height: 250px !important;
+        }
+
+        .fc-sat, .fc-sun {
+          background-color: rgba(124, 229, 92, 0.27);
+        }
+
+        .fc-row{
+          height: 40px !important;
+        }
+
+        td{
+          border: 2px solid #fff  !important;
+
+          text-align: center;
+          color: #515C66;
+          line-height: 40px;
+          font-weight: 600;
+          font-size: 0.8rem;
+          &.fc-other-month{
+            opacity: 0.7;
+            font-weight: 400;
+          }
+
+          &.fc-today{
+            background-color: $primary;
+            color: #fff;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

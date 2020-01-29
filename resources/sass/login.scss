@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext');
+// Variables
+@import 'variables';
+
+section.login{
+  font-family: $font;
+  background:  linear-gradient(to right, #F5F7FB, #eceef2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .logo{
+    width: 150px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  .login-wrapper{
+    background-color: #fff;
+    border-radius: 5px;
+    //border: 1px solid darken(#fff, 20%);
+    box-shadow: 0px 0px 77px -25px #a0a0a0;
+
+    .welcome-wrapper{
+      background-color: #F7F7FB;
+      border-radius: 5px 5px 0 0;
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+
+      .icon-wrapper{
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        background: #FFFFFF;
+        text-align: center;
+        box-shadow: 0 2px 7px 0 rgba(0,0,0,0.04);
+        border-radius: 15px;
+
+        i{
+          line-height: 60px;
+          color: $primary;
+          font-size: 30px;
+        }
+      }
+
+      h1{
+        color: #3D3165;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 5px;
+      }
+
+      p{
+        margin:0;
+        font-weight: 300;
+        color: #B7B3CC;
+      }
+    }
+
+    .form-wrapper{
+      padding: 15px 20px 10px;
+
+      label{
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        color: #B3AEC9;
+      }
+
+      input{
+        border: 0;
+        border-bottom: 1px solid #F5F5F5;
+        border-radius: 0;
+        transition: border-bottom-color 0.3s ease-in-out;
+
+        &::placeholder{
+          color: #EBEAEF;
+        }
+
+        &:focus{
+          box-shadow: none;
+          border-bottom-color: $primary;
+        }
+      }
+
+      button{
+        margin: 30px 0 0;
+        background-color: $primary;
+        border: 0;
+        padding: 20px 0;
+
+        &:focus{
+          box-shadow: none;
+        }
+
+        &:active{
+          background-color: darken($primary, 0.2);
+        }
+      }
+    }
+  }
+
+  .remeber-password{
+    margin-top: 15px;
+    text-align: center;
+
+    a.btn.btn-link{
+      color: $primary !important;
+    }
+  }
+}
